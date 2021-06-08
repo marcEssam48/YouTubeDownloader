@@ -1,7 +1,6 @@
 asgiref==3.3.4
 certifi==2021.5.30
 django==3.2.4
-openssl==1.1.1k
 pafy==0.5.5
 pip==21.1.1
 psycopg2==2.8.6
