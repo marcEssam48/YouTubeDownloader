@@ -104,7 +104,7 @@
         <div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="{{ embedlink }}"></iframe>
         </div>
-
+<div style="overflow-x:auto;">
         <table class="table table-striped" style="margin-top: 30px; margin-bottom: 50px;  color: white;width: 100%;overflow-x: auto;">
             <thead>
             <tr>
@@ -126,7 +126,8 @@
                 </tbody>
             {% endfor %}
         </table>
-
+</div>
+<div style="overflow-x:auto;">
         <table class="table table-striped" style="margin-top: 30px; margin-bottom: 50px; color: white;">
             <thead>
             <tr>
@@ -148,11 +149,11 @@
                 </tbody>
             {% endfor %}
         </table>
+</div>
 
-        <div class="col"
-             style="color: white; text-align: center; margin-top: 30px; color: black; margin-top: 20px; margin-bottom: 20px;">
+{#        <div class="col" style="color: white; text-align: center; margin-top: 30px; color: black; margin-top: 20px; margin-bottom: 20px;">#}
 
-
+<div style="overflow-x:auto;">
 <table class="table table-striped" style="color: white">
   <thead>
     <tr>
@@ -171,7 +172,8 @@
     </tr>
   </tbody>
 </table>
-<div>
+        </div>
+<div style="text-align: center;margin-bottom: 30%">
 <img src="{{ yobj.bigthumb }}" style="width: 50%; height: auto">
 </div>
         {% else %}
@@ -198,10 +200,16 @@
 
 
 </div>
-    </div>
+{#    </div>#}
 
 <!-- container end here -->
-
+<div class="footer">
+<footer class="tnavbar navbar-expand-lg navbar-dark bg-dark" style="width: 100%;color: white">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    Created with Love by 3@bq@rino!
+  </div>
+</footer>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -214,13 +222,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-<br>
-<div class="footer">
-<footer class="tnavbar navbar-expand-lg navbar-dark bg-dark" style="width: 100%;color: white">
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    Created with Love by 3@bq@rino!
-  </div>
-</footer>
-</div>
+
+
 </body>
 </html>
