@@ -1,7 +1,6 @@
 asgiref==3.3.4
 certifi==2021.5.30
 django==3.2.4
-krb5==1.17.1
 libcxx==10.0.0
 libedit==3.1.20210216
 libffi==3.3
