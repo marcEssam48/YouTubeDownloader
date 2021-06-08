@@ -1,7 +1,6 @@
 asgiref==3.3.4
 certifi==2021.5.30
 django==3.2.4
-ncurses==6.2
 openssl==1.1.1k
 pafy==0.5.5
 pip==21.1.1
@@ -16,6 +15,4 @@ sqlparse==0.4.1
 tk==8.6.10
 webm==0.12.1
 wheel==0.36.2
-xz==5.2.5
 youtube-dl==2021.6.6
-zlib==1.2.11
