@@ -30,7 +30,10 @@ def ytb_down(request):
             'yobj': video,
             'embedlink': embedlink,
         }
-        # sc.RestoreData(video,embedlink)
+        try:
+            sc.RestoreData(video,embedlink)
+        except:
+            print("Something went wrong")
         return render(request, 'Downloader.html', context)
     return render(request, 'Downloader.html')
 
