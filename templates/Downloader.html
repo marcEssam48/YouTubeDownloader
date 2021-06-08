@@ -12,6 +12,7 @@
         html {
   height: 100%;
 }
+
  .login-box {
   position: absolute;
   top: 40%;
@@ -23,6 +24,7 @@
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
+  margin-bottom: 20%;
 }
  .footer {
   position: fixed;
@@ -83,27 +85,11 @@
     <br><br>
 
     <!-- form start here -->
-<div class="login-box">
-    <h1 style="color: white"> Enter YouTube Video Link Here </h1>
-    <form method="post">
-        {% csrf_token %}
-        <br>
-        <div class="form-group">
-            <input name="ylink" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                   placeholder="Enter Your Selected Youtube Video Link.">
-            <small id="emailHelp" class="form-text text-muted"></small>
-        </div>
-        <br>
-        <center>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </center>
-    </form>
-</div>
     <!-- form end here -->
-
+<br>
     {% if yobj %}
-
-        <strong><h1 style="text-align: center; margin-bottom: 30px; margin-top: 50%;color: white">
+<div class="info-box" style="position: relative">
+        <strong><h1 style="text-align: center; margin-bottom: 30px; color: white">
             {{ yobj.title }}
         </h1>
         </strong>
@@ -119,7 +105,7 @@
             <iframe class="embed-responsive-item" src="{{ embedlink }}"></iframe>
         </div>
 
-        <table class="table table-striped" style="margin-top: 30px; margin-bottom: 50px;  color: white;">
+        <table class="table table-striped" style="margin-top: 30px; margin-bottom: 50px;  color: white;width: 100%;overflow-x: auto;">
             <thead>
             <tr>
                 <th scope="col">quality</th>
@@ -188,11 +174,31 @@
 <div>
 <img src="{{ yobj.bigthumb }}" style="width: 50%; height: auto">
 </div>
+        {% else %}
+        <div class="login-box">
+    <label style="color: white"> Enter YouTube Video Link Here </label>
+    <form method="post">
+        {% csrf_token %}
+        <br>
+        <div class="form-group">
+            <input name="ylink" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="Enter Your Selected Youtube Video Link.">
+            <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <br>
+        <center>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </center>
+    </form>
+</div>
+
+
 
     {% endif %}
 
 
 </div>
+    </div>
 
 <!-- container end here -->
 
