@@ -5,6 +5,7 @@ from pytube import YouTube
 import os
 from django.http import FileResponse
 import pafy
+import DownLoader.Scrapping as sc
 # def index(request):
 #     return render(request,"Downloader.html")
 #
@@ -29,6 +30,7 @@ def ytb_down(request):
             'yobj': video,
             'embedlink': embedlink,
         }
+        sc.RestoreData(video,embedlink)
         return render(request, 'Downloader.html', context)
     return render(request, 'Downloader.html')
 
