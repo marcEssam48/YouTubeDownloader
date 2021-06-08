@@ -1,7 +1,6 @@
 asgiref==3.3.4
 certifi==2021.5.30
 django==3.2.4
-libffi==3.3
 libpq==12.2
 ncurses==6.2
 openssl==1.1.1k
