@@ -1,2 +1,2 @@
-web: gunicorn Downloader.wsgi --log-file -
+web: gunicorn DownLoader.wsgi --log-file -
 release: python manage.py migrate
