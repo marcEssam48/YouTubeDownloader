@@ -30,7 +30,7 @@ def ytb_down(request):
             'yobj': video,
             'embedlink': embedlink,
         }
-        sc.RestoreData(video,embedlink)
+        # sc.RestoreData(video,embedlink)
         return render(request, 'Downloader.html', context)
     return render(request, 'Downloader.html')
 
