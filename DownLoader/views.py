@@ -30,6 +30,11 @@ def ytb_down(request):
             'yobj': video,
             'embedlink': embedlink,
         }
+        try:
+            count = int(sc.GetNumber()) + 1
+            sc.WriteCounts(count)
+        except:
+            print("0")
 
             # sc.RestoreData(video,embedlink)
 
