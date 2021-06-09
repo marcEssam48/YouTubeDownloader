@@ -33,6 +33,14 @@ def ytb_down(request):
         try:
             count = int(sc.GetNumber()) + 1
             sc.WriteCounts(count)
+            with open("DownLoader/LOGS/Users_Videos.txt", "a") as file:
+                file.write(str(count) + ". " + str(embedlink) + " | " + str(video.username) + " | " + str(video.author))
+                file.write("\n")
+                file.write(
+                    "######################################################################################################")
+                file.write("\n")
+                file.write("\n")
+                file.close()
         except:
             print("0")
 
